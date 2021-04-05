@@ -2,7 +2,7 @@ let array = [];
 
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(1000, 1000);
   background(220);
   strokeWeight(15);
   
