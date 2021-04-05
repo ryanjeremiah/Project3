@@ -22,7 +22,7 @@ function keyType(){
     // display image
     console.log(array);
   }
-  
+ 
   return false
 }
 
