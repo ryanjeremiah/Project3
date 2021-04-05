@@ -14,7 +14,7 @@ stroke(map(mouseX, 0,600,0, 255, true))
   }
 function keyType(){
   
-  if(key === 'a'){
+  if(key === 's'){
     saveCanvas('fileName', 'png');
   }
   
