@@ -10,7 +10,7 @@ function setup() {
 
 function draw() {
   if(mouseIsPressed){  
-     line(mouseX, mouseY, pmouseX, pmouseY);
+     // line(mouseX, mouseY, pmouseX, pmouseY);
      array.push([mouseX, mouseY]);
   }
 function keyType(){
@@ -18,12 +18,12 @@ function keyType(){
   if(key === 's'){
     // save this image
     saveCanvas('fileName', 'png');
-  } else if (key === 'd'){
+  } else if (key==='d'){
     // display image
-    console.log(arry[0]);
-    console.log(array[0][1]);
+    
+    line(array[0][0], array[0][1], array[1][0], array[1][1]);
   }
- 
+  
   return false
 }
 
