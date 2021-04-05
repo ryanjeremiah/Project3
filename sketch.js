@@ -4,7 +4,7 @@ let array = [];
 function setup() {
   createCanvas(1000, 1000);
   background(220);
-  strokeWeight(15);
+  strokeWeight(25);
   
 }
 
@@ -20,7 +20,8 @@ function keyType(){
     saveCanvas('fileName', 'png');
   } else if (key === 'd'){
     // display image
-    console.log(array);
+    console.log(arry[0]);
+    console.log(array[0][1]);
   }
  
   return false
