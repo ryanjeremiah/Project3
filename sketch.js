@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-  if(mouseIsPressed == true){  
+  if(mouseIsPressed){  
      line(mouseX, mouseY, pmouseX, pmouseY);
      array.push([mouseX, mouseY]);
   }
