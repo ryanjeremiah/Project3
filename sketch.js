@@ -14,7 +14,7 @@ stroke(map(mouseX, 0,600,0, 255, true))
   }
 function keyType(){
   if(key === 'a'){
-    console.log('key a is being type')
+    saveCanvas('fileName', 'png');
   }
   
   return false
