@@ -4,13 +4,13 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220, 50, 133);
   
- 
-  
+  stroke(5);
 }
 
 function draw(){
   
-  if(mouseIsPressed){  
+    background(220, 50, 133,20);
+    stroke(map(mouseX, 0, 600,,0,255, true))
     line(width -mouseX, height -mouseY, width - mouseX, height -pmouseY);
     line(mouseX, mouseY, pmouseX, pmouseY);
     background(0);
@@ -24,9 +24,12 @@ function keyType() {
   if(key === 's'){
     // save this image
     saveCanvas('fileName', 'png');
-  } else if (key==='d'){
+  } else if (key === 'd'){
     // display image
     background(255);
+  }velse if (key === 'c') {
+    // clear the image
+    clear();
     
     beginShape();
     for(let i = 0; i< array.length; i++){
