@@ -2,7 +2,7 @@ let array = [];
 
 function setup() {
   createCanvas(1000, 1000);
-  background(220);
+  background(200);
   
   strokeWeight(25);
   noFill();
@@ -40,4 +40,5 @@ function keyType() {
   
   return false
 }
+
 }
