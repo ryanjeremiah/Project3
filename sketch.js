@@ -1,10 +1,12 @@
 let array = [];
 let nosieX = 0.0;
 let stronkeWidth = 5;
+let s;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220, 50, 133);
+  saveCanvas('myCanvas', 'jpg');
   
 }
 
@@ -22,6 +24,7 @@ function draw(){
     background(0);
      array.push([mouseX, mouseY]);
   }
+
     
   }
   
@@ -29,13 +32,8 @@ function keyType() {
   
   if(key === 's'){
     // save this image
-    saveCanvas('fileName', 'png');
-  } else if (key === 'd'){
-    // display image
-    background(255);
-  } else if (key === 'c') {
-    // clear the image
-    clear();
+    saveCanvas(s, 'myCanvas', 'png');
+ 
     
     beginShape();
     for(let i = 0; i< array.length; i++){
@@ -46,6 +44,7 @@ function keyType() {
     line(array[1][0], array[0][1], array[2][0], array[1][1]);
     line(array[0][0], array[0][1], array[1][0], array[1][1]);
   }
+
   
   return false
 }
