@@ -1,16 +1,22 @@
 let array = [];
+let nosieX = 0.0;
+let stronkeWidth = 5;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220, 50, 133);
   
-  stroke(5);
 }
 
 function draw(){
   
     background(220, 50, 133,20);
-    stroke(map(mouseX, 0, 600,,0,255, true))
+    strokeWeight(strokeWidth);
+   
+    nosieX += 0.09;
+    strokeWidth = noise(noiseX) * 310;
+   
+    stroke(map(mouseX, 0, 600, 0,255, true))
     line(width -mouseX, height -mouseY, width - mouseX, height -pmouseY);
     line(mouseX, mouseY, pmouseX, pmouseY);
     background(0);
@@ -27,7 +33,7 @@ function keyType() {
   } else if (key === 'd'){
     // display image
     background(255);
-  }velse if (key === 'c') {
+  } else if (key === 'c') {
     // clear the image
     clear();
     
