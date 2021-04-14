@@ -1,4 +1,6 @@
 let value = 0;
+let imgSave;
+let canvas;
 function setup() {
   createCanvas(800,800);
   background(400);
@@ -23,7 +25,7 @@ function draw(){
     console.log('key s is being type');
     
     saveCanvas('saveCanvas', 'jpg');
-  }
+  
    return false;
  }
 
