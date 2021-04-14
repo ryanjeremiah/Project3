@@ -20,10 +20,10 @@ function draw(){
            //save this image 
   if (key === 's'){ 
     console.log('key s is being type')
+    
+    saveCanvas('saveCanvas', 'jpg');
   }
    return false;
  }
- function save(){
-    saveCanvas('saveCanvas', 'jpg');
- }
+
 }
