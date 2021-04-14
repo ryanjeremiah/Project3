@@ -1,11 +1,17 @@
-let imgSave;
 function setup() {
-  createCanvas(800,800);
+  createCanvas(windowWidth, windowHeight);
+  background(52, 168, 235);
   
   strokeWeight(20);
 }
 
 function draw(){
    if (mouseIsPressed == true){
-     ellipse (mouseX, mouseY, 200,10);
+     ellipse (width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
+   }
+  
+function windowResized(){
+  resizeCanvas(windowWidth, widowHeight);
+}
+ 
 }
