@@ -8,7 +8,7 @@ function setup() {
 function draw(){
    if (mouseIsPressed == true){
      rect (width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
-     triangle (width - mouseX, height - mouseY, width - mouseX, height - pmousY);
+     
    }
   
 function windowResized(){
