@@ -3,7 +3,8 @@ function setup() {
   createCanvas(800,800);
   background(400);
   
-  strokeWeight(10);
+  stroke('rgba(73%, 0%, 11%, 4%)');
+  strokeWeight(7);
 }
 
 function draw(){
