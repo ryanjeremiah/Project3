@@ -2,12 +2,12 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(52, 168, 235);
   
-  strokeWeight(20);
+  strokeWeight(10);
 }
 
 function draw(){
    if (mouseIsPressed == true){
-     rect (width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
+     ellipse (width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
      
    }
   
