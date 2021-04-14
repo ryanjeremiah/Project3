@@ -16,7 +16,7 @@ function draw(){
 
 }
  function keyTyped(){
-  console.log('key s{key} is being typed')
+  
   console.log("key" + key + "is being typed)
            //save this image 
   if (key === 's'){ 
