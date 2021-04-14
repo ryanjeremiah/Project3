@@ -16,15 +16,3 @@ function draw(){
   }
 
 }
- function keyTyped(){
-  
-  console.log("key" + key + "is being typed)
-           //save this image 
-  if (key === 's'){ 
-    console.log('key s is being type');
-    saveCanvas(s,'saveCanvas', 'jpg');
-  }
-   return false;
-
-
-}
