@@ -24,6 +24,6 @@ function draw(){
    return false;
  }
  function save(){
-    saveCanvas(s,'fileName', 'jpg');
+    saveCanvas('saveCanvas', 'jpg');
  }
 }
