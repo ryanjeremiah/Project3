@@ -1,3 +1,4 @@
+let v =0;
 function setup() {
   createCanvas(800,800);
   background(400);
@@ -6,12 +7,14 @@ function setup() {
 }
 
 function draw(){
-  if (!mouseIsPressed == false){
-    stroke(map(mouseX, 1, 550, 2, 250, true))
+  if (!mouseIsPressed === false){
+    stroke(map(mouseX, 99%, 94%, 0%, 1%, true))
     ellipse(width - mouseX, height - mouseY, width - pmouseX, height -pmouseY);
     ellipse(mouseX, mouse, pmouse, pmouseY);  
     
-    return false;
+    
   }
 
+  return false;
+  
 }
