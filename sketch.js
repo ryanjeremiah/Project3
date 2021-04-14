@@ -1,4 +1,5 @@
 let value = 0;
+let imgAdd;
 
 function setup() {
   createCanvas(800,800);
@@ -14,5 +15,11 @@ function draw(){
     ellipse(width - mouseX, height - mouseY, width - pmouseX, height -pmouseY);
     ellipse(mouseX, mouse, pmouse, pmouseY);
   }
-
+function imgAdd(){
+  if (mouseIsPressed)
+    resizeCanvas(reX*800,800);
+  if(img){
+      image(imag, 0,0,width, height)
+}
+  
 }
