@@ -1,9 +1,8 @@
 let imgSave;
 function setup() {
-  createCanvas(800,800);
-  background(400);
+  createCanvas(windowWidth, windowHeight);
   
-  strokeWeight(7);
+  strokeWeight(20);
 }
 
 function draw(){
