@@ -1,3 +1,4 @@
+let imgSave;
 function setup() {
   createCanvas(800,800);
   background(400);
@@ -17,7 +18,7 @@ function keyType(){
   console.log('key s is being type')
  
   if (key === 's'){
-    saveCanvas('file name', 'jpg')
+    saveCanvas('', 'jpg')
     
   }
   return false;
