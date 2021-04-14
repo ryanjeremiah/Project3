@@ -26,9 +26,12 @@ function draw(){
    if (mouseIsPressed == true){
      ellipse(width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
    }
-  
+function mousePressed(){
+  clear();
+  background(168)
+}
 function line(){
-  if (mouseIsPresse === false){
+  if (mouseIsPresse === true){
     line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY
 }
 
