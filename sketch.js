@@ -14,13 +14,7 @@ function draw(){
     
     
   }
-function keyType(){
-  console.log('key s is being type')
- 
-  if (key === 's'){
-    saveCanvas('', 'jpg')
-    
-  }
-  return false;
-  
+function windowResized(){
+resizeCanvas(widnowWidth, windowHeight);
+  background(3, 252, 252);
 }
