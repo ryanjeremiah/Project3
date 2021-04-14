@@ -25,8 +25,8 @@ function draw(){
     console.log('key s is being type');
     
     saveCanvas('saveCanvas', 'jpg');
-  
+  }
    return false;
- }
+
 
 }
