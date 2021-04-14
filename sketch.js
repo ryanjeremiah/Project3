@@ -7,7 +7,7 @@ function setup() {
 
 function draw(){
    if (mouseIsPressed == true){
-     ellipse (width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
+     ellipse(width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
      
    }
   
