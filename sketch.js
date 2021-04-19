@@ -1,13 +1,12 @@
- function setup() {
+let j = createCanvas;
+
+function setup() {
   createCanvas(windowWidth, windowHeight);
   background(190, 3, 252);
   noCursor():
   
   strokeWeight(10);
- }
-
-function windowResized(){
-  resizeCanvas(windowWidth, widowHeight); 
+ 
 }
 
 function draw(){
@@ -24,6 +23,10 @@ function draw(){
 function mousePressed(){
   clear();
   background(168)
+ 
+function creatCanvas(){
+ saveCanvas (100,100);
+ 
 }
 
 function triangles(){
@@ -53,4 +56,11 @@ rect(mouseX, mouseY, pmouseX, pmouseY);
   translate(0, height);
   rect((mouseX), (mouseY * -7), (pmouseX), (pmouseY * -8));
   pop();
+ }
+
+function windowResized(){
+  resizeCanvas(windowWidth, widowHeight); 
+ 
+}
+ 
 }
