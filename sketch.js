@@ -23,7 +23,7 @@ function mousePressed(){
 }
 function line(){
   if (mouseIsPresse === true){
-    line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY
+    line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY)
 }
 
 function background(){
