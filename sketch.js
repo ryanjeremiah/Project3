@@ -1,4 +1,4 @@
-let j = createCanvas;
+let j = saveCanvas;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
