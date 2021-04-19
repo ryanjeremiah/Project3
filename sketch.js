@@ -36,6 +36,6 @@ ellipse (mouseX, mouseY, pmouseX, pmouseY);
   translate(0, height);
   ellipse((mouseX), (mouseY * -3), (pmouseX), (pmouseY * -6));
   pop();
- 
+}
  
 }
