@@ -1,34 +1,28 @@
  function setup() {
   createCanvas(windowWidth, windowHeight);
-
+  background(73%, 45%, 0%, 4%);
+  noCursor():
+  
   strokeWeight(10);
   
-}
-
-function line(){
-  background(Image);
-  c= myImage.get(mouseY, mouseX);
-  fill(c);
-  rectMode(Center);
-  rect(mouseX, mouseY, 45);
-}
+ }
 
 function draw(){
-   if (mouseIsPressed == true){
-     ellipse(width - mouseX, height - mouseY,  width - pmouseX,  height - pmouseY);
+   if (keyIsPressed == true){
+     triangles():
+   }else if (key == 'r'){
+    ellipse():
+   }else if (key == 'j'){
+    rect();
+   }else if (key == 's'){
+    saveCanvas('fileName', 'jpg');
    }
+ 
 function mousePressed(){
   clear();
   background(168)
 }
-function line(){
-  if (mouseIsPresse === true){
-    line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY)
-}
 
-function background(){
-  background(52, 168, 235); 
-    }
 function windowResized(){
   resizeCanvas(windowWidth, widowHeight);
 }
