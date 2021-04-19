@@ -1,7 +1,6 @@
  function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(52, 168, 235);
-  
+
   strokeWeight(10);
   
 }
@@ -27,6 +26,9 @@ function line(){
     line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY
 }
 
+function background(){
+  background(52, 168, 235); 
+    }
 function windowResized(){
   resizeCanvas(windowWidth, widowHeight);
 }
