@@ -1,6 +1,6 @@
  function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(#42f542);
+  background(190, 3, 252);
   noCursor():
   
   strokeWeight(10);
@@ -12,9 +12,12 @@ function windowResized(){
 
 function draw(){
    if (keyIsPressed == true){
-    if (key == 's'){
+    if (key == 'r'){
     ellipse();
-   }else if (key == 's'){
+   }else if (key == 'a'){
+     rect();
+    }
+   }else if (key == 'j'){
     saveCanvas('fileName', 'jpg');
    }
  
@@ -37,5 +40,17 @@ ellipse (mouseX, mouseY, pmouseX, pmouseY);
   ellipse((mouseX), (mouseY * -3), (pmouseX), (pmouseY * -6));
   pop();
 }
- 
+ function triangles(){
+rect(mouseX, mouseY, pmouseX, pmouseY);
+ translate(width, height);
+  rect((mouseX * -1), (mouseY * -6), (pmouseX * -5), (pmouseY * -3));
+  pop();
+  push();
+  translate(width, 0);
+  rect((mouseX * -3), (mouseY), (pmouseX * -3), (pmouseY));
+  pop();
+  push();
+  translate(0, height);
+  rect((mouseX), (mouseY * -7), (pmouseX), (pmouseY * -8));
+  pop();
 }
