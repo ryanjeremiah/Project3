@@ -6,23 +6,10 @@ html {
 body{
   margin: 250px auto 5 auto;
   width: 65%;
-  text-align: left;
+  text-align: right;
   textStyle(BOLD);
-  text('PT Sans', 10, 65);
+  text('Permanent Marker', 65, 65);
   
-}
-body{
-  height: 100%;
-}
-  .bg {
-      /* The image used */
-      background-image: url("Jak_3.png");
-      /* Full height */
-      height: 100%
-      /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        bacground-size: cover;
 }
 canvas {
   margin: auto;
