@@ -1,14 +1,6 @@
-let myImage;
-let c;
-
-function preload(){
-  myImage = loadImage('Jak_3.png') {   
-}
-  
-function setup() {
+ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(52, 168, 235);
-  no
   
   strokeWeight(10);
   
