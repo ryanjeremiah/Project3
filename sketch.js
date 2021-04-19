@@ -3,13 +3,13 @@ let j = createCanvas;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(190, 3, 252);
-  noCursor():
+  noCursor();
   
   strokeWeight(10);
  
 }
 
-function draw(){
+function draw() {
    if (keyIsPressed == true){
     if (key == 'r'){
     ellipse();
@@ -23,6 +23,7 @@ function draw(){
 function mousePressed(){
   clear();
   background(168)
+}
  
 function creatCanvas(){
  saveCanvas (100,100);
@@ -43,7 +44,7 @@ ellipse (mouseX, mouseY, pmouseX, pmouseY);
   ellipse((mouseX), (mouseY * -3), (pmouseX), (pmouseY * -6));
   pop();
 }
- function triangles(){
+ function rectangle(){
 rect(mouseX, mouseY, pmouseX, pmouseY);
  translate(width, height);
   rect((mouseX * -1), (mouseY * -6), (pmouseX * -5), (pmouseY * -3));
